@@ -3,7 +3,7 @@
 * Plugin Name: Simple Pagination
 * Plugin URI: https://www.perrylegion.com/
 * Description: Pagination to navigate between next and previous pages.
-* Version: 1.0
+* Version: 1.1
 * Author: Maxime Esnol
 * Author URI: http://maximeesnol.com/
 **/
