@@ -175,13 +175,13 @@ function html_pagination($next_page, $prev_page, $total_pages, $current_page){
         }
         
         if(($secondPreviousPage = calculate_prev_page($prev_page)) != null){
-            $pageParams["page"] = $secondPreviousPage;
-            $html .= "<li class='page-number'><a href='". get_domain() . create_uri_string($pageParams) ."'>".$secondPreviousPage."</a></li>";
-
             if($secondPreviousPage != 1){
                 $pageParams["page"] = 1;
                 $html .= "<li class='page-number'><a href='". get_domain() . create_uri_string($pageParams) ."'>1...</a></li>";
             }
+
+            $pageParams["page"] = $secondPreviousPage;
+            $html .= "<li class='page-number'><a href='". get_domain() . create_uri_string($pageParams) ."'>".$secondPreviousPage."</a></li>";
         }
 
         if($prev_page != null){
